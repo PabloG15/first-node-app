@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ('partials/head.html')%>
+<body>    
+    <%- include ('partials/navigation.html') %>
+    <div class="container-fluid p-5 mb-5 animated backInUp">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-header bg-dark text-white text-center">
+                    <p class="h3">Contact Me</p>
+                </div>
+                <div class="card-body">
+                    <form action="/send-email" method="POST">
+                        <div class="form-group">
+                            <input name="name" type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="email" type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input name="phone" type="number" class="form-control" placeholder="Contact Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" cols="30" rows="10" class="form-control" placeholder="Type your message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary">
+                                    Send
+                                </button>
+                              </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include ('partials/footer.html')%>
+</body>
+</html>
