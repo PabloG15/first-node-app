@@ -1,14 +1,14 @@
 {
-  "name": "first_web_site",
+  "name": "first_node_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "The First FullStack App Designed by Pablo Gamarra",
   "main": "index.js",
   "scripts": {
     "start": "node src index.js",
     "dev": "nodemon src index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pablo Gamarra",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
